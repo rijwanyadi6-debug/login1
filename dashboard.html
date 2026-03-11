@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- Cek sesi sebelum render konten -->
+  <script src="dashboard.js"></script>
+</head>
+<body>
+
+  <div class="dashboard-page">
+
+    <!-- Topbar -->
+    <nav class="topbar">
+      <div class="topbar-brand">Dashboard</div>
+      <div class="topbar-right">
+        <span class="user-badge" id="userBadge"></span>
+        <button class="logout-btn" onclick="handleLogout()">Keluar</button>
+      </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="dashboard-body">
+
+      <div class="dashboard-header">
+        <h2 id="welcomeMsg">Selamat datang!</h2>
+        <p>Berikut ringkasan aktivitas hari ini — Rabu, 11 Maret 2026</p>
+      </div>
+
+      <!-- Statistik -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Total Pengguna</div>
+          <div class="stat-value">4,820</div>
+          <div class="stat-change">↑ 12% dari bulan lalu</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Pendapatan</div>
+          <div class="stat-value">Rp 48 jt</div>
+          <div class="stat-change">↑ 8.4% dari bulan lalu</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Pesanan Baru</div>
+          <div class="stat-value">319</div>
+          <div class="stat-change">↑ 5.1% dari kemarin</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Tiket Aktif</div>
+          <div class="stat-value">27</div>
+          <div class="stat-change">↓ 3 dari kemarin</div>
+        </div>
+      </div>
+
+      <!-- Konten -->
+      <div class="content-grid">
+
+        <div class="widget">
+          <h3>Aktivitas Terbaru</h3>
+          <div class="activity-item">
+            <div class="activity-dot"></div>
+            <div>
+              <div class="activity-text">Pesanan #4821 berhasil diproses oleh tim gudang</div>
+              <div class="activity-time">5 menit lalu</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot"></div>
+            <div>
+              <div class="activity-text">Pengguna baru terdaftar: Budi Santoso (budi@email.com)</div>
+              <div class="activity-time">23 menit lalu</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot"></div>
+            <div>
+              <div class="activity-text">Laporan bulanan Februari 2026 telah diterbitkan</div>
+              <div class="activity-time">1 jam lalu</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot"></div>
+            <div>
+              <div class="activity-text">Pembaruan sistem v2.4.1 berhasil diterapkan</div>
+              <div class="activity-time">3 jam lalu</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget">
+          <h3>Status Proyek</h3>
+          <ul class="quick-list">
+            <li>Website Redesign    <span class="badge badge-green">Selesai</span></li>
+            <li>Integrasi API       <span class="badge badge-yellow">Proses</span></li>
+            <li>Migrasi Database    <span class="badge badge-blue">Rencana</span></li>
+            <li>Audit Keamanan      <span class="badge badge-yellow">Proses</span></li>
+            <li>Laporan Q1          <span class="badge badge-blue">Rencana</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

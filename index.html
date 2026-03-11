@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div class="login-wrapper">
+    <div class="login-card">
+
+      <div class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h1>Selamat Datang</h1>
+        <p>Masuk ke akun Anda</p>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Masukkan username" autocomplete="off"/>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Masukkan password"/>
+        <div class="error-msg" id="errorMsg">Username atau password salah. Coba lagi.</div>
+      </div>
+
+      <button class="login-btn" id="loginBtn" onclick="handleLogin()">Masuk</button>
+
+      <div class="hint">
+        Gunakan kredensial berikut:
+        <span>👤 admin &nbsp;|&nbsp; 🔑 admin123</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
